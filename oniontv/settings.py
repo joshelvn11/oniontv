@@ -139,3 +139,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles"  # Collect static to here for production
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.herokuapp.com",
+    "https://*.onrender.com",
+    "http://localhost"
+]
