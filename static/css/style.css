@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  background-color: black; /* Setting a light grey color as the root page color */
+  color: whitesmoke;
+  font-family: "Inter", sans-serif;
+}
+
+.catalogue-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.catalogue-item {
+  border: 1px solid whitesmoke;
+  max-width: 200px;
+}
+
+.catalogue-item-details {
+  padding: 6px 12px;
+}
+
+.catalogue-item-title {
+  margin: 0;
+}
+
+.catalogue-item-year {
+  margin: 0;
+}
+
+.catalogue-item-image {
+  height: 300px;
+  border-bottom: 1px solid whitesmoke;
+}

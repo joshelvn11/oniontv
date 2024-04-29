@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="catalogue-container">
+    {% for movie in movies %}
+        <div class="catalogue-item">
+            <a href="{{ movie.video_url }}">
+                <img src="{{ movie.cover_image }}" alt="{{ movie.title }} poster" class="catalogue-item-image">
+            </a>
+            <div class="catalogue-item-details">
+                <h3 class="catalogue-item-title">{{ movie.title }}</h3>
+                <p class="catalogue-item-year">{{ movie.year }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
